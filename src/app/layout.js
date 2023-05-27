@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: "V-Store",
   description: "Shopping",
+  thumbnail: "https://www.blogtyrant.com/wp-content/uploads/2019/07/how-to-start-an-online-store-min.png",
   openGraph: {
     
     title: "V-Store",
