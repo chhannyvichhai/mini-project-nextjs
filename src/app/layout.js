@@ -11,7 +11,7 @@ export const metadata = {
   description: "Shopping",
   openGraph: {
     
-    title: "Jules",
+    title: "V-Store",
     description: "Your 24/7 shopping place",
   },
 };

@@ -15,7 +15,7 @@ const Navbar = () => {
 						bg-gray-200 bg-opacity-75 dark:bg-darker dark:opacity-80"></label>
 						<div class="relative z-40">
 							<a href="#" aria-label="logo">
-								<img src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg" class="h-14 w-14 hidden dark:block " alt="tailus logo"/>
+								<img src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg" class="h-14 w-14 sm:w-20 hidden dark:block " alt="tailus logo"/>
 								V-STORE
 							</a>
 						</div>
