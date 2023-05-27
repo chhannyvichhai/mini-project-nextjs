@@ -13,7 +13,7 @@ export default function Home({product}) {
 						<div className="container m-auto px-6 pt-24 md:px-12  lg:pt-[4.8rem] lg:px-7">
 							<div className="grid lg:grid-cols-2 items-center gap-12 px-2 md:px-0">
 								<div className="col-span-1">
-									<div className="relative w-full">
+									<div className="relative w-full pt-10">
 										<img
 											src="https://media.istockphoto.com/id/1320501530/photo/white-sneaker-on-a-blue-gradient-background-mens-fashion-sport-shoe-sneakers-lifestyle.jpg?s=612x612&w=0&k=20&c=dgnAb4BsW_O8LEPUaEurgYj82H6x7fA_OCcuBTDUVCA="
 											alt="shoes"
@@ -105,7 +105,7 @@ export default function Home({product}) {
 					</div>
 				</section>
 			</div>
-			<div className="flex min-h-screen flex-wrap items-center justify-between p-24">
+			<div className="flex min-h-screen flex-wrap items-center justify-between ">
 				<Products />
 				<Categories/>
 				<Users/>

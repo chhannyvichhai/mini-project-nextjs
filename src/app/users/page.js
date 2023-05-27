@@ -12,7 +12,7 @@ export default async function Users() {
 	const users = await fetchUsers();
 	return (
 		<main>
-			<div className="text-center font-bold text-5xl p-10 ">
+			<div className="text-center font-bold text-5xl pt-40 ">
 				<h1>Users</h1>
 			</div>
 			<div className="flex min-h-screen flex-wrap items-center justify-between p-10">

@@ -1,165 +1,109 @@
-import { Content } from "next/font/google";
-import Link from "next/link";
+
+
 
 const Navbar = () => {
 	return (
-		<nav class="bg-white border-gray-200 dark:bg-gray-900">
-			<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-				<a href="https://flowbite.com/" class="flex items-center">
-					<img
-						src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg"
-						class="h-8 mr-3"
-						alt="Flowbite Logo"
-					/>
-					<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-						V-Store
-					</span>
-				</a>
-				<div class="flex md:order-2">
-					<button
-						type="button"
-						data-collapse-toggle="navbar-search"
-						aria-controls="navbar-search"
-						aria-expanded="false"
-						class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-					>
-						<svg
-							class="w-5 h-5"
-							aria-hidden="true"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-								clip-rule="evenodd"
-							></path>
-						</svg>
-						<span class="sr-only">Search</span>
-					</button>
-					<div class="relative hidden md:block">
-						<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-							<svg
-								class="w-5 h-5 text-gray-500"
-								aria-hidden="true"
-								fill="currentColor"
-								viewBox="0 0 20 20"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-									clip-rule="evenodd"
-								></path>
-							</svg>
-							<span class="sr-only">Search icon</span>
+		<div class="bg-white dark:bg-gray-900 ">
+		<header>
+			<nav class="fixed z-40 w-full border-b dark:border-gray-700 bg-white dark:bg-gray-800 md:absolute md:bg-transparent">
+				<div class="container m-auto px-2 md:px-12 lg:px-7">
+					<div class="flex px-6 md:px-0 z-20 flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
+						<input type="checkbox" name="" id="toggleNav" class="peer hidden"/>
+						<label for="toggleNav" role="overlaynav" class="fixed left-0 top-0 transition-all 
+						md:peer-checked:hidden md:hidden opacity-0 hidden peer-checked:z-0 
+						peer-checked:opacity-75 peer-checked:block w-full h-screen
+						bg-gray-200 bg-opacity-75 dark:bg-darker dark:opacity-80"></label>
+						<div class="relative z-40">
+							<a href="#" aria-label="logo">
+								<img src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg" class="h-14 w-14 hidden dark:block " alt="tailus logo"/>
+								V-STORE
+							</a>
 						</div>
-						<input
-							type="text"
-							id="search-navbar"
-							class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-							placeholder="Search..."
-						/>
-					</div>
-					<button
-						data-collapse-toggle="navbar-search"
-						type="button"
-						class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-						aria-controls="navbar-search"
-						aria-expanded="false"
-					>
-						<span class="sr-only">Open menu</span>
-						<svg
-							class="w-6 h-6"
-							aria-hidden="true"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-								clip-rule="evenodd"
-							></path>
-						</svg>
-					</button>
-				</div>
-				<div
-					class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-					id="navbar-search"
-				>
-					<div class="relative mt-3 md:hidden">
-						<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-							<svg
-								class="w-5 h-5 text-gray-500"
-								aria-hidden="true"
-								fill="currentColor"
-								viewBox="0 0 20 20"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-									clip-rule="evenodd"
-								></path>
-							</svg>
-						</div>
-						<input
-							type="text"
-							id="search-navbar"
-							class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-							placeholder="Search..."
-						/>
-					</div>
-					<ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-						<li>
-							<a
-								href="/"
-								class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-								aria-current="page"
-							>
-								Home
-							</a>
-						</li>
-						<li>
-							<a
-								href="/products"
-								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								Products
-							</a>
-						</li>
-						<li>
-							<a
-								href="/categories"
-								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								Categories
-							</a>
-						</li>
-						<li>
-							<a
-								href="/users"
-								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								Users
-							</a>
-						</li>
-						<li>
-							<a
-								href="/addnew"
-								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-							>
-								ADD NEW PRODUCT
-							</a>
-						</li>
 						
-					</ul>
+						<div id="navlinks"
+							class="fixed h-full w-4/5 max-w-sm top-0 -left-full peer-checked:-left-0 md:relative md:top-0 md:left-0 transition-all z-30 md:flex items-center p-8 bg-white dark:bg-gray-800 md:space-y-0 md:p-0 md:flex-nowrap md:bg-transparent md:w-max">
+							<div class="z-20 flex gap-8 md:gap-0 flex-col md:flex-row md:items-center w-full">
+								<ul class="pt-28 lg:pt-0 gap-8 tracking-wide font-medium flex-col flex md:flex-row md:gap-0">
+									<li class="max-w-max">
+										<a href="/" class="block md:px-3">
+											<div
+												class="relative text-cyan-800 dark:text-white
+														before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400">
+												<span>HOME</span>
+											</div>
+										</a>
+									</li>
+									<li class="max-w-max">
+										<a href="/products" class="block md:px-3 group">
+											<div
+												class="relative text-gray-600 dark:text-gray-300
+														before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+												<span class="transition group-hover:text-cyan-700 dark:group-hover:text-cyan-400">PRODUCTS</span>
+											</div>
+										</a>
+									</li>
+									<li class="max-w-max">
+										<a href="/categories" class="block md:px-3 group">
+											<div
+												class="relative text-gray-600 dark:text-gray-300
+														before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+												<span class="transition group-hover:text-cyan-700 dark:group-hover:text-cyan-400">CATEGORIES</span>
+											</div>
+										</a>
+									</li>
+									<li class="max-w-max">
+										<a href="/users" class="block md:px-3 group">
+											<div
+												class="relative text-gray-600 dark:text-gray-300
+														before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+												<span class="transition group-hover:text-cyan-700 dark:group-hover:text-cyan-400">USERS</span>
+											</div>
+										</a>
+									</li>
+									<li class="max-w-max">
+										<a href="/addnew" class="block md:px-3 group">
+											<div
+												class="relative text-gray-600 dark:text-gray-300
+														before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 dark:before:bg-cyan-400 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+												<span class="transition group-hover:text-cyan-700 dark:group-hover:text-cyan-400">ADD</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="flex sm:hidden pt-4 w-full">
+									<button type="button" title="Start buying"
+										class=" flex justify-center items-center w-full py-3 px-6 text-center rounded-full transition bg-gray-900 dark:bg-gray-700 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800">
+										<span class="block text-white text-sm">
+											Shop now
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="block-endnav w-max flex items-center gap-4">
+							<button type="button" title="Start buying"
+								class="hidden sm:block w-full py-3 px-6 text-center rounded-full transition bg-gray-900 dark:bg-gray-700 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max">
+								<span class="block text-white text-sm">
+									Shop now
+								</span>
+							</button>
+	
+							<div class="flex items-center md:hidden max-h-10">
+								<label role="button" for="toggleNav" aria-label="humburger" id="hamburger" class="relative  p-6 -mr-6">
+									<div role="hidden" id="line"
+										class="m-auto h-0.5 w-6 rounded bg-sky-900 dark:bg-gray-200 transition duration-300"></div>
+									<div role="hidden" id="line2"
+										class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 dark:bg-gray-200 transition duration-300">
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
 				</div>
-				
-			</div>
-		</nav>
+			</nav>
+		</header>
+		
+	</div>
 	);
 };
 export default Navbar;

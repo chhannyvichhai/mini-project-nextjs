@@ -123,7 +123,7 @@ export default function FormComponent() {
 		return resp.json();
 	};
 	return (
-		<div className="items-center">
+		<div className="items-center pt-40">
 			<div className="px-20 my-20 max-md:my-14 max-md:px-10    py-7 shadow-md rounded-2xl bg-gradient-to-tr from-blue-900 to-purple-100 w-2/6 max-md:w-[70%] ">
 				<h2 className="my-4 max-md:text-2xl">ADD PRODUCT</h2>
 
