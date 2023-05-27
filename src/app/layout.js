@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "V-Store",
-  description: "Shopping",
+  description: "This is my Store",
   thumbnail: "https://www.blogtyrant.com/wp-content/uploads/2019/07/how-to-start-an-online-store-min.png",
   openGraph: {
     
     title: "V-Store",
-    description: "Your 24/7 shopping place",
+    description: "This is my Store",
   },
 };
 

@@ -2,11 +2,13 @@ const ProductCard = ({product}) => {
 	return (
 		<div className="w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-3">
 			<a href="#">
+				<div>
 				<img
 					className="p-8 rounded-t-lg "
 					src={product.images[0]}
 					alt="product image"
 				/>
+				</div>
 			</a>
 			<div className="px-5 pb-5">
 				<a href="#">
@@ -79,8 +81,9 @@ const ProductCard = ({product}) => {
 						href="#"
 						className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 					>
-						Add to cart
+						<div>Add to cart</div>
 					</a>
+
 				</div>
 			</div>
 		</div>
