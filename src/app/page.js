@@ -109,9 +109,6 @@ export default function Home({product}) {
 				<Products />
 				<Categories/>
 				<Users/>
-				<button className="bg-yellow">
-					<Link href="/addnew">Add New</Link>
-				</button>
 			</div>
 		</main>
 	);
