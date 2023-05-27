@@ -18,7 +18,7 @@ const Footer = () => {
                 <div
                   class="flex items-center justify-between gap-6 border-b border-white dark:border-gray-800 py-6 md:block md:space-y-6 md:border-none md:py-0"
                 >
-                  <img src="images/logo.svg" alt="logo tailus" width="100" height="42" class="w-32 dark:brightness-200 dark:grayscale" />
+                  <img src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg" alt="logo tailus" width="100" height="42" class="w-32 dark:brightness-200 dark:grayscale" />
                   <div class="flex gap-6">
                     <a href="#" target="blank" aria-label="github" class="hover:text-cyan-600">
                       <svg

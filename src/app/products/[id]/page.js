@@ -6,6 +6,29 @@ async function fetchProduct(id) {
 	});
 	return resp.json();
 }
+// Call generateMetadata
+export async function generateMetadata({params}){
+    const product = await fetchProduct(params.id)
+    return{
+        title: product.title,
+        description: product.description,
+        thumbnail: product.images[1],
+        MediaMetadata: new URL('https://istad.co'),
+        alternates:{
+            canonical: '/',
+            languages:{
+                'en-US': '/en-US',
+                'de-DE': '/de-DE',
+            },
+        },
+        openGraph:{
+            images: product.images[0],
+            title: product.title,
+            description: product.description
+        },
+    }
+}
+
 
 export default async function ProductDetail({ params }) {
 	const {id} = params

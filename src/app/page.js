@@ -1,10 +1,10 @@
-import CategoryCard from "@/components/CategoryCard";
 import Products from "./products/page";
 import Categories from "./categories/page";
-import UserCard from "@/components/UserCard";
 import Users from "./users/page";
+import Link from "next/link";
 
-export default function Home() {
+
+export default function Home({product}) {
 	return (
 		<main>
 			<div>
@@ -109,6 +109,9 @@ export default function Home() {
 				<Products />
 				<Categories/>
 				<Users/>
+				<button className="bg-yellow">
+					<Link href="/addnew">Add New</Link>
+				</button>
 			</div>
 		</main>
 	);

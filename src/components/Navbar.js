@@ -6,12 +6,12 @@ const Navbar = () => {
 			<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 				<a href="https://flowbite.com/" class="flex items-center">
 					<img
-						src="https://flowbite.com/docs/images/logo.svg"
+						src="https://thumbs.dreamstime.com/b/any-type-business-company-name-starts-letter-v-right-design-creative-logo-vector-art-153082713.jpg"
 						class="h-8 mr-3"
 						alt="Flowbite Logo"
 					/>
 					<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-						Flowbite
+						V-Store
 					</span>
 				</a>
 				<div class="flex md:order-2">
@@ -126,7 +126,7 @@ const Navbar = () => {
 								href="/products"
 								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 							>
-								Product
+								Products
 							</a>
 						</li>
 						<li>
@@ -134,7 +134,7 @@ const Navbar = () => {
 								href="/categories"
 								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 							>
-								Category
+								Categories
 							</a>
 						</li>
 						<li>
@@ -142,7 +142,7 @@ const Navbar = () => {
 								href="/users"
 								class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
 							>
-								User
+								Users
 							</a>
 						</li>
 					</ul>

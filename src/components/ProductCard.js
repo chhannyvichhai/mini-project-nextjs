@@ -16,7 +16,7 @@ const ProductCard = ({product}) => {
 					</h5>
 					</div>
 				</a>
-				<div className="flex items-center mt-2.5 mb-5">
+				<div className="flex items-center mt-2.5 mb-">
 					<svg
 						aria-hidden="true"
 						className="w-5 h-5 text-yellow-300"
@@ -73,7 +73,7 @@ const ProductCard = ({product}) => {
 				</div>
 				<div className="flex items-center justify-between">
 					<span className="text-3xl font-bold text-gray-900 dark:text-white">
-						$599
+						${product.price}
 					</span>
 					<a
 						href="#"

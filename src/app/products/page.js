@@ -14,7 +14,6 @@ export async function fetchProduct(){
 
 export default async function Products() {
     const products = await fetchProduct() 
-    console.log(products)
   return (
    <main>
     <div className='text-center font-bold text-5xl p-10 '>
