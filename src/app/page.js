@@ -105,7 +105,7 @@ export default function Home({product}) {
 					</div>
 				</section>
 			</div>
-			<div classNameName="flex min-h-screen flex-wrap items-center justify-between p-24">
+			<div className="flex min-h-screen flex-wrap items-center justify-between p-24">
 				<Products />
 				<Categories/>
 				<Users/>
